@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+	<link href="normalize.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
     <title>We're AWeD | Contact Us Page</title>
   </head>
@@ -18,10 +19,8 @@
     <main>
 		<form>
 			<h1>Login</h1>
-			<label for = "user_name">Name: </label><br>
-			<input type = "text" id = "name" name = "name"><br>
-			<label for = "user_email">Password:</label><br>
-			<input type = "password" id = "email" name = "email"><br>
+			<input type = "text" id = "name" name = "name" placeholder = "Username or Email"><br>
+			<input type = "password" id = "email" name = "email" placeholder = "Password"><br>
 			<button id = "login-button" type = "submit">Login</button>
 		</form>
     </main>
