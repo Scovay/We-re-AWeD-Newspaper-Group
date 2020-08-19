@@ -3,31 +3,89 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-	<link href="normalize.css" rel="stylesheet" type="text/css" />
+	  <link href="normalize.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel = "icon" type = "image/ping" href = "https://cdn3.iconfinder.com/data/icons/ballicons-reloaded-free/512/icon-70-512.png">
     <title>We're AWeD | Contact Us Page</title>
   </head>
   <body>
     <header>
 		<nav>
 			<a href = "index.html">Home</a>
-			<a href = "#">Articles</a>
+			<a href = "articles.html">Articles</a>
+      <a href = "crossword.html">Crossword</a>
 			<a href = "login.html">Login</a>
 			<a href = "contact.html">Contact Us</a>
 		</nav>
-		<h1>We're AWeD Contact Form</h1>
+		<h1>We're AWeD Contact</h1>
     </header>
     <main>
+		<forms id = "Email">
+			<fieldset>
+				<legend>Email Form:</legend>
+				<fieldset>
+					<legend>Personal Info</legend>
+					<input type = "text" id = "emailer" name = "emailname" placeholder = "Name">
+					<input type = "email" id = "emailer's_email" name = "emailemail" placeholder = "Email">
+				</fieldset>
+				<fieldset>
+					<legend>Email Body</legend>
+					<textarea id = "email-body" name = "body" placeholder = "Message Here"></textarea>
+				</fieldset>
+				<button type = "submit" id = "email_send" onclick = "emailAlert()">Send email</button>
+			</fieldset>
+		</forms>
+
+
+    <!-- Apparently repl doesn't even work with php... ;( -->
+    <!-- <form action="" method="post">
+      First Name: <input type="text" name="first_name"><br>
+      Last Name: <input type="text" name="last_name"><br>
+      Email: <input type="text" name="email"><br>
+      Message:<br><textarea rows="5" name="message" cols="30"></textarea><br>
+      <input type="submit" name="submit" value="Submit">
+    </form> 
+    <?php 
+    if(isset($_POST['submit'])){
+        $to = "example@gmail.com"; // this is your Email address
+        $from = $_POST['email']; // this is the sender's Email address
+        $first_name = $_POST['first_name'];
+        $last_name = $_POST['last_name'];
+        $subject = "Form submission";
+        $subject2 = "Copy of your form submission";
+        $message = $first_name . " " . $last_name . " wrote   the following:" . "\n\n" . $_POST['message'];
+        $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
+
+        $headers = "From:" . $from;
+        $headers2 = "From:" . $to;
+        mail($to,$subject,$message,$headers);
+        mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+        echo "Mail Sent. Thank you " . $first_name . ", we  will contact you shortly.";
+        // You can also use header('Location: thank_you.php') ; to redirect to another page.
+      }
+    ?> -->
+
+
 		<h2>Address</h2>
 		<p>
 			We're AweD HR<br>
 			New York St.<br>
 			New York City 12345<br>
 		</p>
+		<p>
+			Email us at: <a href = "mailto: example@AWeD.com? subject=Hello!&Body=Hello%20There!">example@AWed.com</a><br>
+			Or call us at: (314) - 159 - 2653
+		</p>
+		<h2>Office Hours: </h2>
+		<p>
+			Sunday: Closed<br>
+			Mon - Fri: 8 AM to 5 PM<br>
+			Sat: 4 PM to 8 PM
+		</p>
     </main>
     <footer>
-
-    </footer>
+		  <p>&copy We're AWeD Publications</p>
+	  </footer>
 	  <script src="script.js"></script> 
   </body>
 </html>

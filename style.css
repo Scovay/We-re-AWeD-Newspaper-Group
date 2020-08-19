@@ -13,7 +13,7 @@ h1{
 }
 footer{
 	padding: 5px;
-	position: fixed;
+	/* position: fixed; */
 	left: 0;
 	right: 0;
 	bottom: 0;
@@ -72,7 +72,8 @@ nav a:hover {
 form{
 	text-align: center;
 	margin: auto;
-	margin-top: 25px;
+	margin-top: 100px;
+	margin-bottom: 50px;
 	padding: 5px;
 	width: 66%;
 	background-color: rgb(102, 194, 255);
@@ -81,18 +82,55 @@ form{
 }
 input{
 	margin-top: 15px;
-	color: #EEE;
+	color: black;
 	background-color: #BEE9E8;
 	border: #EEE solid 1px;
 	border-radius: 5px;
   	padding: 3px 6px;
 }
+.lst{
+	margin-bottom: 15px;
+}
+
 #login-button{
 	background-color: #BEE9E8;
 	border:#FFF solid 1px;
 	border-radius: 5px;
-	margin-top: 10px;
+	margin-top: 5px;
+}
+fieldset{
+	border: none;
+}
+legend{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-size: 1.5em;
+	text-align: left;
+}
+label{
+	margin-top: 5px;
+	display: block;
+	font-size: 1.15rem;
 }
 form h1 {
   font-family: "Righteous", "Passion One", arial;
+}
+textarea{
+	background-color: #BEE9E8;
+	border-radius: 12px;
+	height: 100px;
+	width: 370px;
+	margin-top: 5px;
+}
+.forgot{
+	margin: 5px;
+	margin-right: -90px;
+	font-size: .75rem;
+}
+#ageLabel{
+	margin: 5px;
+}
+#email-body{
+	height: 200px;
+	width: 530px;
 }
